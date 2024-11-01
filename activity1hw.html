@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Json and JS Asynchronous</title>
+</head>
+<body>
+    <center>
+<h1>JS async/await</h1>
+<p id="result"></p>
+    </center>
+<script>
+async function product(a,b){
+let response= await a * b;
+display(response);
+}
+function display(some){
+    document.getElementById("result").innerHTML=some;
+}
+product(5,20)
+</script>
+</body>
+</html>
